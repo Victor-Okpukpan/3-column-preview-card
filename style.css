@@ -1,0 +1,102 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    max-width: 60%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.sedans {
+    min-height: 100%;
+    background-color: hsl(31, 77%, 52%);
+    padding: 20px;
+}
+
+.suv {
+    min-height: 100%;
+    background-color: hsl(184, 100%, 22%);
+    padding: 20px;
+}
+
+.luxury {
+    min-height: 100%;
+    background-color: hsl(179, 100%, 13%);
+    padding: 20px;
+}
+
+.icon {
+ margin-bottom: 20px;
+}
+
+.header {
+    color: hsl(0, 0%, 95%);
+    margin-bottom: 20px;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 80px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    max-width: 100%;
+}
+
+.button {
+    margin-bottom: 40px;
+    max-width: 100%;
+}
+
+.cta-link {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.sedans .cta-link {
+    color: hsl(31, 77%, 52%);
+}
+
+.suv .cta-link {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury .cta-link {
+    color: hsl(179, 100%, 13%);
+}
+
+.cta-link:hover {
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: inherit;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+@media only screen and (max-width: 1064px) {
+    body {
+        height: 100%;
+        margin: 20px 0;
+        overflow-x: hidden;
+    }
+
+    .card {
+        flex-wrap: wrap;
+    }
+}
